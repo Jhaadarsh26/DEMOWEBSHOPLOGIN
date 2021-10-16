@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="22.383">
+    <testcase classname="Test Login Functionality" name="Check login is successful with valid credentials" time="15.184">
+        <system-out><![CDATA[Given browser is open.......................................................passed
+And user is on login page...................................................passed
+When user enters email and password.........................................passed
+Then user is navigated to the home page.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Login Functionality" name="check login is unsuccessful with taking email blank" time="5.853">
+        <system-out><![CDATA[Given page is loaded........................................................passed
+When user enters password...................................................passed
+And clicks on login.........................................................passed
+Then user  should be displayed a message error "Login was unsuccessful".....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Login Functionality" name="To verify Password field must not be same as that of e-mail." time="0.897">
+        <system-out><![CDATA[Given page is here..........................................................passed
+When user enter email and password same as email............................passed
+Then user  showing 'password is not same as e-mail'.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Login Functionality" name="To verify for valid e-mail and invalid password" time="0.196">
+        <system-out><![CDATA[Given page is there.........................................................passed
+When user enters valid email and invalid password...........................passed
+Then user should displayed " The credentials provided are incorrect" on page.passed
+]]></system-out>
+    </testcase>
+</testsuite>
